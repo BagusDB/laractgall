@@ -1,3 +1,4 @@
+@vite(['public/build/assets/app.a0a7c860.js', 'public/build/assets/app.69041b03.css']).
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
