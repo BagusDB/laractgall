@@ -12,6 +12,7 @@ export default function Dashboard(props) {
     const [isNotif, setNotif] = useState(false);
     const { flash } = usePage().props;
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData();
@@ -20,7 +21,7 @@ export default function Dashboard(props) {
         // formData.append("image_category", image_category);
         formData.append("image_path", image_path);
 
-        router.post("/upload", formData);
+        router.post("/CuyGallery/public/upload", formData);
         setNotif(true);
         // setImageCategory("");
         setImageDescription("");
@@ -133,7 +134,7 @@ const ImageList = ({ props, auth }) => {
                             <figure>
                                 <img
                                     src={
-                                        `http://localhost:8000/uploads/` +
+                                        `http://siswa.smkn6jember.net/CuyGallery/public/uploads/` +
                                         image.image_path
                                     }
                                     alt="Shoes"

@@ -14,7 +14,7 @@ const isImage = ({ props }) => {
                                           <img
                                               className="w-full"
                                               src={
-                                                  `http://localhost:8000/uploads/` +
+                                                  `http://siswa.smkn6jember.net/CuyGallery/public/uploads/` +
                                                   image.image_path
                                               }
                                               alt="Sunset in the mountains"

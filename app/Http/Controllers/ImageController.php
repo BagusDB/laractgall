@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Image;
 use App\Http\Resources\ImageCollection;
+use Illuminate\Support\Facades\Redirect;
 
 class ImageController extends Controller
 {
@@ -38,7 +39,7 @@ class ImageController extends Controller
 
         $image->save();
 
-        return redirect()->back()->with('message', 'Image uploaded successfully');
+        return Redirect::route('dashboard')->with('message', 'Image uploaded successfully');
     }
 
     public function show(Request $request)

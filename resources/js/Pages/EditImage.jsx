@@ -27,7 +27,7 @@ const EditImage = (props) => {
         formData.append("image_description", image_description);
         formData.append("image_path", image_path);
 
-        router.post("/upload/update", formData);
+        router.post("/CuyGallery/api/upload/update", formData);
         setNotif(true);
         // setImageCategory("");
     };
